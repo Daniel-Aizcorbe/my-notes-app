@@ -1,7 +1,7 @@
 import React from "react";
-import BotonPremium from "./BotonPremium";
-import Usuario from "./Usuario";
-import "./styles/OpcionesUsuario.css";
+import BotonPremium from "../commons/BotonPremium";
+import Usuario from "../commons/Usuario";
+import "../styles/OpcionesUsuario.css";
 
 const OpcionesUsuario = () => {
 

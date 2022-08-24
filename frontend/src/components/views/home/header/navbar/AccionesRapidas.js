@@ -1,7 +1,7 @@
 import React from "react";
-import Buscar from "./Buscar";
-import CrearNota from "./CrearNota";
-import "./styles/AccionesRapidas.css";
+import Buscar from "../commons/Buscar";
+import CrearNota from "../commons/CrearNota";
+import "../styles/AccionesRapidas.css";
 
 const AccionesRapidas = () => {
 
