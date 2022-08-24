@@ -2,5 +2,37 @@
   list-style-type: none;
   display: flex;
   flex-direction: row;
+  height: 100%;
+  max-width: 500px;
   width: 100%;
+  padding: 0;
+  justify-content: space-evenly;
+  margin: 0;
+  align-items: center;
+}
+
+.secciones li {
+  height: 100%;
+  display: flex;
+}
+
+.seccion {
+  background-color: #131515;
+  border: none;
+  height: 100%;
+  border-bottom: 5px solid #131515;
+  font-family: Verdana,sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+  color: #FFFAFB;
+  padding: 10px;
+  margin: 0;
+}
+
+.seccion:hover {
+  border-bottom: 5px solid #339989;
+}
+
+.active {
+  border-bottom: 5px solid #339989;
 }

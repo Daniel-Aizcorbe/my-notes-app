@@ -1,0 +1,26 @@
+.contenedor-acciones-rapidas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-right: 10px;
+  border-right: 2px solid #2B2C28;
+}
+
+.boton-redondo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #131515;
+  height: 50px;
+  width: 50px;
+  color: #FFFAFB;
+  font-size: 30px;
+  border: none;
+  border-radius: 100%;
+}
+
+.boton-redondo:hover {
+  background-color: #2B2C28;
+  color: #339989;
+}

@@ -9,8 +9,10 @@ const NavBar = () => {
   return (
     <nav className="contenedor-secciones">
       <Secciones />
-      <AccionesRapidas />
-      <OpcionesUsuario/>
+      <div className="botones">
+        <AccionesRapidas />
+        <OpcionesUsuario/>
+      </div>
     </nav>
   );
 };

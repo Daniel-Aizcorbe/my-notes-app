@@ -5,7 +5,6 @@ const Usuario = () => {
   const opciones = () => alert("OPCIONES");
 
   return (
-    <div className="contenedor-usuario">
       <button className="boton-usuario" onClick={() => opciones()}>
         <img
           alt="imagen de usuario"
@@ -13,7 +12,6 @@ const Usuario = () => {
           className="imagen-usuario"
         />
       </button>
-    </div>
   );
 };
 

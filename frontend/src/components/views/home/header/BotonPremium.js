@@ -6,9 +6,11 @@ const BotonPremium = () => {
   const clic = () => alert("ACTUALIZAR")
 
   return (
-    <button onClick={() => clic()}>
+    <button className="boton-premium" onClick={() => clic()}>
       <IoDiamondOutline />
-      Actualizar
+      <span>
+        Actualizar
+      </span>
     </button>
   );
 };
