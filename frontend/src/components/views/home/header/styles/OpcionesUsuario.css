@@ -1,0 +1,7 @@
+.contenedor-opciones-usuario {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}

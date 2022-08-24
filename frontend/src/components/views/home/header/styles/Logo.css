@@ -1,0 +1,10 @@
+.contenedor-logo {
+  width: 130px;
+  height: 40px;
+  border: 2px solid #131515;
+  margin: 10px;
+}
+
+.contenedor-logo:hover {
+  border: 2px solid #339989;
+}
