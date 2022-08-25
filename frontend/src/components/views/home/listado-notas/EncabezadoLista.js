@@ -1,5 +1,6 @@
 import React from "react";
 import BotonOrdenar from "./BotonOrdenar";
+import "./styles/EncabezadoLista.css";
 
 const EncabezadoLista = () => {
 

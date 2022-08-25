@@ -1,5 +1,6 @@
 import React from "react";
-import Nota from "./Nota";
+import Nota from "./commons/nota/Nota";
+import "./styles/Notas.css";
 
 const Notas = () => {
 
@@ -20,18 +21,21 @@ const Notas = () => {
 
   const mostrarNota = (nota) => {
 
+    let id = 1;
+
     return (
       <Nota
-        cuerpo={nota.cuerpo}
         titulo={nota.titulo}
-        tags={nota.tags}
+        key={id++}
       />
     );
   }
 
   return (
     <div className="contenedor-notas">
-      {mostrarNotas(notas)}
+      <ul className="lista-notas">
+        {mostrarNotas(notas)}
+      </ul>
     </div>
   );
 };
