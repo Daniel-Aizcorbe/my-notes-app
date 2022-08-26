@@ -6,9 +6,11 @@ const BarraLateral = () => {
 
   return (
     <aside className="filtros">
-      <h2>
-        Filtrar
-      </h2>
+      <div className="contenedor-titulo-filtro">
+        <h2 className="titulo-barra">
+          Filtrar por tags
+        </h2>
+      </div>
       <OpcionesTags />
     </aside>
   );

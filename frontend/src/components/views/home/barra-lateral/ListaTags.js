@@ -3,6 +3,8 @@ import Tag from "./Tag";
 
 const ListaTags = () => {
 
+  let id = 0;
+
   const tags = [
     {
       nombre: "estudio",
@@ -11,6 +13,10 @@ const ListaTags = () => {
     {
       nombre: "recordatorio",
       color: "green"
+    },
+    {
+      nombre: "apunte",
+      color: "lightblue"
     }
   ];
 
@@ -19,12 +25,13 @@ const ListaTags = () => {
   const mostrarTag = (tag) => {
     return <Tag
       nombre={tag.nombre}
-      color={tag.color}
+      color={"rgba(255, 209, 102, 60%)"}
+      key={id++}
     />;
   }
 
   return (
-    <div className="contenedor-barra-busqueda">
+    <div className="contenedor-tags">
       <ul className="lista-tags">
         {mostrarTags(tags)}
       </ul>

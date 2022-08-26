@@ -5,6 +5,7 @@ const BarraBusqueda = () => {
   return (
     <div className="contenedor-barra-busqueda">
       <input
+        className="barra-busqueda"
         type="text"
         placeholder="Busca una etiqueta..."
       />
@@ -13,3 +14,7 @@ const BarraBusqueda = () => {
 };
 
 export default BarraBusqueda;
+
+/*
+*
+* */
