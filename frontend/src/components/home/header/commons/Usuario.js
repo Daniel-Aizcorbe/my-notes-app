@@ -8,7 +8,7 @@ const Usuario = () => {
       <button className="boton-usuario" onClick={() => opciones()}>
         <img
           alt="imagen de usuario"
-          src="frontend/src/components/views/home/header/commons/Usuario#"
+          src="frontend/src/components/home/header/commons/Usuario#"
           className="imagen-usuario"
         />
       </button>

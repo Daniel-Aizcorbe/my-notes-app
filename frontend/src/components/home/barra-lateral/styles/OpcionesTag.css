@@ -57,6 +57,7 @@
 
 .tag-search input {
   background-color: #2B2C28;
+  padding: 3px;
   border: none;
   color: #FFFAFB;
   min-width: 40px;
@@ -78,4 +79,14 @@
   padding: 0;
   margin-left: 3px;
   background-color: inherit;
+}
+
+.oculto {
+  display: none;
+}
+
+.resultados {
+  display: block;
+  height: 300px;
+  background-color: #339989;
 }

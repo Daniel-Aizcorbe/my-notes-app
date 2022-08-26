@@ -1,9 +1,10 @@
 import './App.css';
-import Header from "./components/views/home/header/Header";
-import BarraLateral from "./components/views/home/barra-lateral/BarraLateral";
-import ListadoNotas from "./components/views/home/listado-notas/ListadoNotas";
+import Header from "./components/home/header/Header";
+import BarraLateral from "./components/home/barra-lateral/BarraLateral";
+import ListadoNotas from "./components/home/listado-notas/ListadoNotas";
 
 function App() {
+
   return (
     <div className="App">
       <Header />

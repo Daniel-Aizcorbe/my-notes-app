@@ -7,7 +7,10 @@ const Secciones = () => {
   return (
     <ul className="secciones">
       <Seccion nombre="Archivadas"/>
-      <Seccion nombre="Mis Notas"/>
+      <Seccion
+        nombre="Mis Notas"
+        clases={"seccion actual"}
+      />
       <Seccion nombre="Favoritas"/>
       <Seccion nombre="Etiquetas"/>
     </ul>

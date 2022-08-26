@@ -1,12 +1,12 @@
 import React from "react";
 
-const Seccion = ({ nombre, seccion="seccion" }) => {
+const Seccion = ({ nombre, clases="seccion" }) => {
 
   const actualizarSeccion = (seccion) => alert(seccion);
 
   return (
     <li>
-      <button className="seccion" onClick={() => actualizarSeccion(seccion)}>
+      <button className={clases} onClick={() => actualizarSeccion(clases)}>
         {nombre}
       </button>
     </li>
