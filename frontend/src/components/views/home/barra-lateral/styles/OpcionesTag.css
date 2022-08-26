@@ -11,7 +11,7 @@
 }
 
 .barra-busqueda {
-  width: 170px;
+  width: 90%;
   height: 20px;
 }
 
@@ -44,15 +44,33 @@
 
 }
 
-.tag {
+.tag-search {
+  display: flex;
+  margin: 2px;
+  padding-top: 4px;
+}
 
+.tag-search input::placeholder {
+  font-style: italic;
+  font-family: Roboto, sans-serif;
+}
+
+.tag-search input {
+  background-color: #2B2C28;
+  border: none;
+  color: #FFFAFB;
+  min-width: 40px;
+}
+
+.tag-search input:focus {
+  border: none;
+  outline: none;
 }
 
 .tag button {
   height: auto;
   width: auto;
   border-radius: 100%;
-  background-color: #131515;
   border: none;
   color: #FFFAFB;
   display: flex;
@@ -60,8 +78,4 @@
   padding: 0;
   margin-left: 3px;
   background-color: inherit;
-}
-
-.tag button svg{
-
 }

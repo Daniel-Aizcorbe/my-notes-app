@@ -9,12 +9,13 @@ const Tag = ({ nombre, color, key}) => {
       style={
         {
           background:color,
-
         }
       }
       key={key}>
       {nombre}
-      <button className="boton-quit">
+      <button className="boton-quit"
+        onClick={() => alert("QUITAR TAG")}
+      >
         <AiOutlineCloseCircle />
       </button>
     </li>

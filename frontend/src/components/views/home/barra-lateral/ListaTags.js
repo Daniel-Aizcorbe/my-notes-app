@@ -1,5 +1,6 @@
 import React from "react";
 import Tag from "./Tag";
+import {azul, celeste, verdeClaro} from "../logica/colores-tag";
 
 const ListaTags = () => {
 
@@ -8,15 +9,15 @@ const ListaTags = () => {
   const tags = [
     {
       nombre: "estudio",
-      color: "red"
+      color: azul
     },
     {
       nombre: "recordatorio",
-      color: "green"
+      color: verdeClaro
     },
     {
       nombre: "apunte",
-      color: "lightblue"
+      color: celeste
     }
   ];
 
@@ -25,7 +26,7 @@ const ListaTags = () => {
   const mostrarTag = (tag) => {
     return <Tag
       nombre={tag.nombre}
-      color={"rgba(255, 209, 102, 60%)"}
+      color={tag.color}
       key={id++}
     />;
   }
