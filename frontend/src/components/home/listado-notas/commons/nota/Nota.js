@@ -1,12 +1,11 @@
 import React from "react";
 import BotonesNota from "./BotonesNota";
 
-const Nota = ({ titulo, key}) => {
+const Nota = ({ titulo}) => {
 
   return (
     <li
       className="contenedor-nota"
-      key={key}
     >
       <h2 className="titulo-nota">
         {titulo}

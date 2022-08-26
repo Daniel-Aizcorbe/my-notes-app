@@ -7,11 +7,13 @@ const Notas = () => {
   const notas = [
     {
       titulo: "Nota #1",
+      id:"1",
       cuerpo: "Hola esta es mi primer nota",
       tags: ["holis","nueva","cosas"]
     },
     {
       titulo: "Nota #2",
+      id:"2",
       cuerpo: "Ahora hago esta sin tags",
       tags: []
     }
@@ -21,12 +23,10 @@ const Notas = () => {
 
   const mostrarNota = (nota) => {
 
-    let id = 1;
-
     return (
       <Nota
         titulo={nota.titulo}
-        key={id++}
+        key={nota.id}
       />
     );
   }
