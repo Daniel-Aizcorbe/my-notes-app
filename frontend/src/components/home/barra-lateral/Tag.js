@@ -1,6 +1,8 @@
 import React from "react";
 import {AiOutlineCloseCircle} from "react-icons/ai";
 
+import "./styles/Tag.css";
+
 const Tag = ({ nombre, color, id}) => {
 
   return (

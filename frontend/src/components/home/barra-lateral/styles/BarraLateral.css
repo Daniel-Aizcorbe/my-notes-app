@@ -6,32 +6,3 @@
   justify-content: flex-start;
   align-items: center;
 }
-
-.contenedor-titulo-filtro {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 10px;
-  border-bottom: 2px solid #2B2C28;
-}
-
-.titulo-barra {
-  width: 200px;
-  font-size: 18px;
-  height: 30px;
-  padding: 10px 0;
-  margin: 0;
-}
-
-.contenedor-tags-seleccionados {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-}
-
-.lista-tags-select {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-}

@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles/BarraBusqueda.css";
 
 const BarraBusqueda = () => {
 
@@ -14,7 +15,3 @@ const BarraBusqueda = () => {
 };
 
 export default BarraBusqueda;
-
-/*
-*
-* */

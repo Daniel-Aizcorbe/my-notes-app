@@ -1,7 +1,9 @@
 import React from "react";
-import "./styles/BarraLateral.css";
+
 import OpcionesTags from "./OpcionesTags";
 import TituloFiltro from "./TituloFiltro";
+
+import "./styles/BarraLateral.css";
 
 const BarraLateral = () => {
 

@@ -1,0 +1,22 @@
+.tag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 4px 8px;
+  margin: 2px;
+}
+
+.boton-quit {
+  height: auto;
+  width: auto;
+  border-radius: 100%;
+  border: none;
+  color: #FFFAFB;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-left: 3px;
+  background-color: inherit;
+}

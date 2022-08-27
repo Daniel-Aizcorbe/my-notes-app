@@ -1,0 +1,17 @@
+.contenedor-tags {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.contenedor-buscador-tags {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #2B2C28;
+  border-radius: 10px;
+  padding: 7px;
+}
+
+

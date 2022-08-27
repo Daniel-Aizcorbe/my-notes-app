@@ -1,0 +1,8 @@
+.lista-tags-select {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 4px 0;
+  padding: 0;
+}

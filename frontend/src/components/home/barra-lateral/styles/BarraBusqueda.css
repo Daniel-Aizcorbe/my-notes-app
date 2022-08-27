@@ -1,0 +1,21 @@
+.contenedor-barra-busqueda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.barra-busqueda {
+  background-color: #2B2C28;
+  border: none;
+  color: #FFFAFB;
+  width: 100%;
+}
+
+.barra-busqueda:focus {
+  outline: none;
+}
+
+.barra-busqueda::placeholder {
+  font-family: Roboto, sans-serif;
+  font-style: italic;
+}
