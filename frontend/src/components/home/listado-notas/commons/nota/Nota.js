@@ -1,7 +1,7 @@
 import React from "react";
 import BotonesNota from "./BotonesNota";
 
-const Nota = ({ titulo}) => {
+const Nota = ({ titulo, favorito }) => {
 
   return (
     <li
@@ -10,7 +10,7 @@ const Nota = ({ titulo}) => {
       <h2 className="titulo-nota">
         {titulo}
       </h2>
-      <BotonesNota />
+      <BotonesNota favorito={favorito}/>
     </li>
   );
 };

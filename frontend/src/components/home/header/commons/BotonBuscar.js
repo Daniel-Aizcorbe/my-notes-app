@@ -1,7 +1,7 @@
 import React from "react";
 import {FiSearch} from "react-icons/fi";
 
-const Buscar = () => {
+const BotonBuscar = () => {
 
   return (
     <button className="boton-redondo">
@@ -10,4 +10,4 @@ const Buscar = () => {
   );
 };
 
-export default Buscar;
+export default BotonBuscar;

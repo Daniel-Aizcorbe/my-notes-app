@@ -9,13 +9,15 @@ const Notas = () => {
       titulo: "Nota #1",
       id:"1",
       cuerpo: "Hola esta es mi primer nota",
-      tags: ["holis","nueva","cosas"]
+      tags: ["holis","nueva","cosas"],
+      favorito: true
     },
     {
       titulo: "Nota #2",
       id:"2",
       cuerpo: "Ahora hago esta sin tags",
-      tags: []
+      tags: [],
+      favorito: false
     }
   ];
 
@@ -27,6 +29,7 @@ const Notas = () => {
       <Nota
         titulo={nota.titulo}
         key={nota.id}
+        favorito={nota.favorito}
       />
     );
   }

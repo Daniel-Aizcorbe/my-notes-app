@@ -1,0 +1,13 @@
+.lista-tags-sugerencias {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #2B2C28;
+  margin: 0;
+}
+
+.oculto {
+  display: none;
+}

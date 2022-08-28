@@ -4,7 +4,7 @@ import {IoFileTrayFullOutline} from "react-icons/io5";
 import {AiFillDelete, AiFillEdit} from "react-icons/ai";
 
 
-const BotonesNota = () => {
+const BotonesNota = ({ favorito }) => {
 
   return (
     <div className="contenedor-botones-nota">
@@ -12,7 +12,7 @@ const BotonesNota = () => {
         className="boton-favoritos"
         onClick={() => alert("AGREGADO A FAVORITOS")}
       >
-        <HiOutlineStar />
+        <HiOutlineStar color={favorito ? "#ffbf00" : "#339989"} />
       </button>
       <button
         className="boton-archivar"

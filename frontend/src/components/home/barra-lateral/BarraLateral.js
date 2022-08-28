@@ -1,16 +1,17 @@
 import React from "react";
 
-import OpcionesTags from "./OpcionesTags";
+import TagsSeleccionados from "./TagsSeleccionados";
 import TituloFiltro from "./TituloFiltro";
 
 import "./styles/BarraLateral.css";
+
 
 const BarraLateral = () => {
 
   return (
     <aside className="filtros">
       <TituloFiltro />
-      <OpcionesTags />
+      <TagsSeleccionados />
     </aside>
   );
 };

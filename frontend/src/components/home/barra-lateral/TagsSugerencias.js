@@ -1,20 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 import Tag from "./Tag";
 import {azul} from "../logica/colores-tag";
 
+import "./styles/TagsSugerencias.css";
+
 const TagsSugerencias = () => {
 
-  let mostrar = true;
+  const [mostrar,setMostrar] = useState(false);
 
   return (
-    <div className={mostrar ? "resultados" : "oculto"}>
-      <ul className="lista-tags-sugerencias">
+    <div>
+      <ul className={ mostrar ? "lista-tags-sugerencias " : "oculto"}>
         <Tag
           nombre={"cosas"}
           color={azul}
           id={12}
         />
       </ul>
+      <button onClick={() => setMostrar(!mostrar)}>
+        toggle
+      </button>
     </div>
   );
 };

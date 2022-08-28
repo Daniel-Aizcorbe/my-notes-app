@@ -1,5 +1,5 @@
 import React from "react";
-import Buscar from "../commons/Buscar";
+import BotonBuscar from "../commons/BotonBuscar";
 import CrearNota from "../commons/CrearNota";
 import "../styles/AccionesRapidas.css";
 
@@ -7,7 +7,7 @@ const AccionesRapidas = () => {
 
   return (
     <div className="contenedor-acciones-rapidas">
-      <Buscar />
+      <BotonBuscar />
       <CrearNota />
     </div>
   );
