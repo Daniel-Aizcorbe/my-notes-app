@@ -6,13 +6,22 @@ const Secciones = () => {
 
   return (
     <ul className="secciones">
-      <Seccion nombre="Archivadas"/>
+      <Seccion
+        nombre="Archivadas"
+        activo={false}
+      />
       <Seccion
         nombre="Mis Notas"
-        clases={"seccion actual"}
+        activo={true}
       />
-      <Seccion nombre="Favoritas"/>
-      <Seccion nombre="Etiquetas"/>
+      <Seccion
+        nombre="Favoritas"
+        activo={false}
+      />
+      <Seccion
+        nombre="Etiquetas"
+        activo={false}
+      />
     </ul>
   );
 };
