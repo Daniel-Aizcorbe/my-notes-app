@@ -1,14 +1,19 @@
 import React from "react";
 
-const Seccion = ({ nombre, clases="seccion" }) => {
+import Boton from "../../../commons/boton/Boton";
+
+const Seccion = ({ nombre}) => {
 
   const actualizarSeccion = (seccion) => alert(seccion);
 
   return (
     <li>
-      <button className={clases} onClick={() => actualizarSeccion(clases)}>
-        {nombre}
-      </button>
+      <Boton
+        clases={"seccion"}
+        onClick={() => actualizarSeccion("SECCION")}
+        titulo={nombre}
+        children={""}
+      />
     </li>
   );
 };

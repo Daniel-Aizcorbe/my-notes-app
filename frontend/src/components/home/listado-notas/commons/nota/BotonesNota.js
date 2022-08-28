@@ -2,36 +2,36 @@ import React from "react";
 import {HiOutlineStar} from "react-icons/hi";
 import {IoFileTrayFullOutline} from "react-icons/io5";
 import {AiFillDelete, AiFillEdit} from "react-icons/ai";
+import Boton from "../../../../commons/boton/Boton";
 
 
 const BotonesNota = ({ favorito }) => {
 
   return (
     <div className="contenedor-botones-nota">
-      <button
-        className="boton-favoritos"
+      <Boton
+        clases={"boton-favoritos"}
         onClick={() => alert("AGREGADO A FAVORITOS")}
-      >
-        <HiOutlineStar color={favorito ? "#ffbf00" : "#339989"} />
-      </button>
-      <button
-        className="boton-archivar"
+        children={<HiOutlineStar color={favorito ? "#ffbf00" : "#339989"} />}
+      />
+      <Boton
+        clases={"boton-archivar"}
         onClick={() => alert("ARCHIVADO")}
-      >
-        <IoFileTrayFullOutline />
-      </button>
-      <button
-        className="boton-editar"
+        children={<IoFileTrayFullOutline />}
+        titulo={""}
+      />
+      <Boton
+        clases={"boton-editar"}
         onClick={() => alert("EDITAR")}
-      >
-        <AiFillEdit />
-      </button>
-      <button
-        className="boton-eliminar"
+        titulo={""}
+        children={<AiFillEdit />}
+      />
+      <Boton
+        clases={"boton-eliminar"}
         onClick={() => alert("ELIMINAR")}
-      >
-        <AiFillDelete />
-      </button>
+        children={<AiFillDelete />}
+        titulo={""}
+      />
     </div>
   );
 };

@@ -3,6 +3,7 @@ import Tag from "./Tag";
 import {azul} from "../logica/colores-tag";
 
 import "./styles/TagsSugerencias.css";
+import Boton from "../../commons/boton/Boton";
 
 const TagsSugerencias = () => {
 
@@ -17,9 +18,10 @@ const TagsSugerencias = () => {
           id={12}
         />
       </ul>
-      <button onClick={() => setMostrar(!mostrar)}>
-        toggle
-      </button>
+      <Boton
+        titulo={"toogle"}
+        onClick={() => setMostrar(!mostrar)}
+      />
     </div>
   );
 };

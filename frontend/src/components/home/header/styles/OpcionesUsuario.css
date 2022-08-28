@@ -16,10 +16,6 @@
   font-size: 17px;
 }
 
-.boton-premium span {
-  padding: 0 5px;
-}
-
 .boton-premium:hover {
   color: #339989;
 }

@@ -2,6 +2,7 @@ import React from "react";
 import {AiOutlineCloseCircle} from "react-icons/ai";
 
 import "./styles/Tag.css";
+import Boton from "../../commons/boton/Boton";
 
 const Tag = ({ nombre, color, id}) => {
 
@@ -15,11 +16,12 @@ const Tag = ({ nombre, color, id}) => {
       }
       key={id}>
       {nombre}
-      <button className="boton-quit"
+      <Boton
+        titulo={""}
+        clases={"boton-quit"}
         onClick={() => alert("QUITAR TAG")}
-      >
-        <AiOutlineCloseCircle />
-      </button>
+        children={<AiOutlineCloseCircle />}
+      />
     </li>
   );
 };

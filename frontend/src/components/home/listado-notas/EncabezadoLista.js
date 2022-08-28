@@ -1,5 +1,7 @@
 import React from "react";
-import BotonOrdenar from "./BotonOrdenar";
+import Boton from "../../commons/boton/Boton";
+import {BsSortDown} from "react-icons/bs";
+
 import "./styles/EncabezadoLista.css";
 
 const EncabezadoLista = () => {
@@ -9,7 +11,12 @@ const EncabezadoLista = () => {
       <h1>
         Mis Notas
       </h1>
-      <BotonOrdenar />
+      <Boton
+        clases={"boton-ordenar"}
+        onClick={() => alert("ORDENAR")}
+        titulo={""}
+        children={<BsSortDown />}
+      />
     </div>
   );
 };
