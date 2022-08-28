@@ -8,7 +8,8 @@ const BarraBusqueda = () => {
       <input
         className="barra-busqueda"
         type="text"
-        placeholder="Busca una etiqueta..."
+        placeholder="Agregar una etiqueta..."
+
       />
     </div>
   );

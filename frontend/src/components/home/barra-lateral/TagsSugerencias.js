@@ -1,27 +1,23 @@
-import React, {useState} from "react";
-import Tag from "./Tag";
-import {azul} from "../logica/colores-tag";
+import React from "react";
 
 import "./styles/TagsSugerencias.css";
-import Boton from "../../commons/boton/Boton";
+import {useSelector} from "react-redux";
+import {mostrarTags} from "../../../utils/logic/generar-tags";
 
 const TagsSugerencias = () => {
 
-  const [mostrar,setMostrar] = useState(false);
+  const tags = useSelector(
+    state => state.tags.tags
+      .filter(tag => !tag.seleccionado)
+  );
 
   return (
     <div>
-      <ul className={ mostrar ? "lista-tags-sugerencias " : "oculto"}>
-        <Tag
-          nombre={"cosas"}
-          color={azul}
-          id={12}
-        />
+      <ul className={"lista-tags-sugerencias"}>
+        {
+          mostrarTags(tags)
+        }
       </ul>
-      <Boton
-        titulo={"toogle"}
-        onClick={() => setMostrar(!mostrar)}
-      />
     </div>
   );
 };

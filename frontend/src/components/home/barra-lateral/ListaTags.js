@@ -1,23 +1,16 @@
 import React from "react";
-
-import Tag from "./Tag";
+import {mostrarTags} from "../../../utils/logic/generar-tags";
 
 import "./styles/ListaTags.css";
+import {useSelector} from "react-redux";
 
-const mostrarTags = (tags) => {
 
-  return tags.map(tag => mostrarTag(tag));
-}
+const ListaTags = () => {
 
-const mostrarTag = (tag) => {
-  return <Tag
-    nombre={tag.nombre}
-    color={tag.color}
-    key={tag.id}
-  />;
-}
-
-const ListaTags = ({tags}) => {
+  const tags = useSelector(
+    state => state.tags.tags
+      .filter(tag => tag.seleccionado)
+  );
 
   return (
     <ul className="lista-tags-select">
