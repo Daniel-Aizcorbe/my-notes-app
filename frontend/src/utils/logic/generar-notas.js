@@ -8,6 +8,8 @@ const mostrarNota = (nota) => {
       titulo={nota.titulo}
       key={nota.id}
       favorito={nota.favorito}
+      id={nota.id}
+      archivada={nota.archivada}
     />
   );
 };

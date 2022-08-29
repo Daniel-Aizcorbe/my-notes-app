@@ -1,38 +1,23 @@
-import { createSlice } from "@reduxjs/toolkit";
-import {amarillo, azul, bordo} from "../../../components/home/logica/colores-tag";
-import {createTag, quitarTag, seleccionarTag} from "./reducers/reducersTags";
+import { createSlice } from '@reduxjs/toolkit'
+
+const initialState = {
+  tags: []
+}
 
 export const tagSlice = createSlice({
-  name: "tags",
-  initialState: {
-    tags: [
-      {
-        nombre: "tag-no-seleccionado",
-        color: azul,
-        id: "0",
-        seleccionado: false
-      },
-      {
-        nombre: "tag-selecionado",
-        color: bordo,
-        id: "1",
-        seleccionado: true
-      },
-      {
-        nombre: "tag-sugerido",
-        color: amarillo,
-        id: "2",
-        seleccionado: false
-      }
-    ],
-  },
+  name: 'tags',
+  initialState,
   reducers: {
-    quittag: quitarTag,
-    selecttag: seleccionarTag,
-    createtag: createTag
+    creartag: (state, action) => {
+      state.tags = state.tags.push(action.payload);
+    },
+    toggletag: (state, action) => {
+      let indexElem = state.tags.findIndex(tag => tag.id === action.payload.id);
+      state.tags[indexElem].seleccionado = !state.tags[indexElem].seleccionado;
+    }
   }
 });
 
-export const {quittag, selecttag} = tagSlice.actions;
+export const { creartag, toggletag } = tagSlice.actions
 
-export default tagSlice.reducer;
+export default tagSlice.reducer

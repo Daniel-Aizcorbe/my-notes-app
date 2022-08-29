@@ -12,6 +12,7 @@ function App() {
 
   return (
     <Provider store={store}>
+
         <Header />
         <div className="contenedor-cuerpo">
           <BarraLateral />

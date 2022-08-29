@@ -3,21 +3,25 @@ import {HiOutlineStar} from "react-icons/hi";
 import {IoFileTrayFullOutline} from "react-icons/io5";
 import {AiFillDelete, AiFillEdit} from "react-icons/ai";
 import Boton from "../../../../commons/boton/Boton";
+import {useDispatch} from "react-redux";
+import {borrarnota, togglearchivada, togglefavorito} from "../../../../../redux/slices/notas/notaSlice";
 
 
-const BotonesNota = ({ favorito }) => {
+const BotonesNota = ({ favorito, id, archivada }) => {
+
+  const dispatch = useDispatch();
 
   return (
     <div className="contenedor-botones-nota">
       <Boton
         clases={"boton-favoritos"}
-        onClick={() => alert("AGREGADO A FAVORITOS")}
         children={<HiOutlineStar color={favorito ? "#ffbf00" : "#339989"} />}
+        onClick={() => dispatch(togglefavorito({id}))}
       />
       <Boton
         clases={"boton-archivar"}
-        onClick={() => alert("ARCHIVADO")}
-        children={<IoFileTrayFullOutline />}
+        onClick={() => dispatch(togglearchivada({id}))}
+        children={<IoFileTrayFullOutline color={archivada ? "#ffbf00" : "#339989"} />}
         titulo={""}
       />
       <Boton
@@ -28,7 +32,7 @@ const BotonesNota = ({ favorito }) => {
       />
       <Boton
         clases={"boton-eliminar"}
-        onClick={() => alert("ELIMINAR")}
+        onClick={() => dispatch(borrarnota({id}))}
         children={<AiFillDelete />}
         titulo={""}
       />

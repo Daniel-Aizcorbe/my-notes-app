@@ -1,13 +1,14 @@
 import {configureStore} from "@reduxjs/toolkit";
 
-import tagsReducer from "./slices/tags/tagSlice.js";
-import notasReducer from "./slices/notas/notasSlice";
+import tagReducer from "./slices/tags/tagSlice";
+import notaReducer from "./slices/notas/notaSlice";
 
 export default configureStore(
   {
     reducer: {
-      tags: tagsReducer,
-      notas: notasReducer
+      tags: tagReducer,
+      notas: notaReducer
     }
   }
 );
+

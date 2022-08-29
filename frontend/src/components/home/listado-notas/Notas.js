@@ -1,11 +1,11 @@
 import React from "react";
 import "./styles/Notas.css";
-import {useSelector} from "react-redux";
 import {mostrarNotas} from "../../../utils/logic/generar-notas";
+import {useSelector} from "react-redux";
 
 const Notas = () => {
 
-  const notas = useSelector((state) => state.notas.notas.filter(n => !n.archivado));
+  const notas = useSelector(state => state.notas.notas);
 
   return (
     <div className="contenedor-notas">
