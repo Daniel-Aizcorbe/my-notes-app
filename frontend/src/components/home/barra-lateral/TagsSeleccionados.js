@@ -16,7 +16,7 @@ const TagsSeleccionados = () => {
         </h2>
         <ListaTags />
         <BarraBusqueda actualizarInput={setInput}/>
-        <TagsSugerencias />
+        <TagsSugerencias input={input}/>
       </div>
   );
 };

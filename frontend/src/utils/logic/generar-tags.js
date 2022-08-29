@@ -11,5 +11,7 @@ const mostrarTag = (tag) => {
     nombre={tag.nombre}
     color={tag.color}
     key={tag.id}
+    id={tag.id}
+    seleccionado={tag.seleccionado}
   />;
 }

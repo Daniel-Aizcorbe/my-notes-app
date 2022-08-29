@@ -4,9 +4,8 @@ import {AiOutlineCloseCircle} from "react-icons/ai";
 import "./styles/Tag.css";
 import Boton from "../../commons/boton/Boton";
 import {useDispatch} from "react-redux";
-import {deletetag} from "../../../redux/slices/tags/tagSlice";
 
-const Tag = ({ nombre, color, id}) => {
+const Tag = ({ nombre, color, id, seleccionado}) => {
 
   const dispatch = useDispatch();
 
@@ -18,14 +17,16 @@ const Tag = ({ nombre, color, id}) => {
           background:color,
         }
       }
-      key={id}>
+      key={id}
+      onClick={!seleccionado ? () => dispatch(toggletag({id})) : null}
+    >
       {nombre}
-      <Boton
+      {seleccionado ? <Boton
         titulo={""}
         clases={"boton-quit"}
-        onClick={() => dispatch(deletetag({id}))}
+        onClick={() => dispatch(toggletag({id}))}
         children={<AiOutlineCloseCircle />}
-      />
+      /> : ""}
     </li>
   );
 };

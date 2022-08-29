@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit'
+import {createSlice} from '@reduxjs/toolkit'
 
 const initialState = {
   tags: []
@@ -13,10 +13,12 @@ export const tagSlice = createSlice({
     },
     toggletag: (state, action) => {
       let indexElem = state.tags.findIndex(tag => tag.id === action.payload.id);
-      state.tags[indexElem].seleccionado = !state.tags[indexElem].seleccionado;
+      console.log(indexElem);
+      console.log(state.tags[indexElem]);
+      state.tags[indexElem] = {...state.tags[indexElem], seleccionado: !state.tags[indexElem].seleccionado}
     },
     deletetag: (state,action) => {
-      let indexElem = state.tags.findIndex(n => n.id === action.payload.id);
+      let indexElem = state.tags.findIndex(tag => tag.id === action.payload.id);
       state.tags.splice(indexElem,1);
     }
   }

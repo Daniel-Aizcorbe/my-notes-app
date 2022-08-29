@@ -1,9 +1,8 @@
 import React from "react";
 
 import "./styles/TagsSugerencias.css";
-import {useSelector} from "react-redux";
+import { useSelector} from "react-redux";
 import {mostrarTags} from "../../../utils/logic/generar-tags";
-import Boton from "../../commons/boton/Boton";
 
 const TagsSugerencias = ({ input }) => {
 
@@ -12,16 +11,16 @@ const TagsSugerencias = ({ input }) => {
       .filter(tag => !tag.seleccionado)
   );
 
+  const tagsSugeridos = tags.filter(t => t.nombre.includes(input));
+
+  console.log(tagsSugeridos);
+
   return (
     <div>
       <ul className={"lista-tags-sugerencias"}>
         {
-          mostrarTags(tags.filter(t => t.nombre.includes(input)))
+          mostrarTags(tagsSugeridos)
         }
-        <Boton
-          titulo={"Crear Tag"}
-          clases={"boton-crear-tag"}
-        />
       </ul>
     </div>
   );
