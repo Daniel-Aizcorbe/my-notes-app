@@ -5,18 +5,29 @@ import {AiFillDelete, AiFillEdit} from "react-icons/ai";
 import Boton from "../../../../commons/boton/Boton";
 import {useDispatch} from "react-redux";
 import {borrarnota, togglearchivada, togglefavorito} from "../../../../../redux/slices/notas/notaSlice";
+import {addtag} from "../../../../../redux/slices/tags/tagSlice";
+import {azul} from "../../../logica/colores-tag";
 
 
 const BotonesNota = ({ favorito, id, archivada }) => {
 
   const dispatch = useDispatch();
 
+  const nuevoTag = {
+    nombre: "nuevo-tag",
+    id: 4,
+    color: azul,
+    seleccionado: false
+  };
+
   return (
     <div className="contenedor-botones-nota">
       <Boton
         clases={"boton-favoritos"}
-        children={<HiOutlineStar color={favorito ? "#ffbf00" : "#339989"} />}
-        onClick={() => dispatch(togglefavorito({id}))}
+        children={
+          <HiOutlineStar color={favorito ? "#ffbf00" : "#339989"} />
+        }
+        onClick={() => dispatch(togglefavorito({id: id}))}
       />
       <Boton
         clases={"boton-archivar"}
@@ -25,8 +36,8 @@ const BotonesNota = ({ favorito, id, archivada }) => {
         titulo={""}
       />
       <Boton
-        clases={"boton-editar"}
-        onClick={() => alert("EDITAR")}
+        clases={"boton-add-tag"}
+        onClick={() => dispatch(addtag(nuevoTag))}
         titulo={""}
         children={<AiFillEdit />}
       />

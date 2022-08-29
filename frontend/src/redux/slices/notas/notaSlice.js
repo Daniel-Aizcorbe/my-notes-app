@@ -24,7 +24,7 @@ export const notaSlice = createSlice({
   initialState,
   reducers: {
     crearnota: (state,action) => {
-      state.notas = state.notas.push(action.payload);
+      state.notas.unshift(action.payload);
     },
     actualizarnota: (state,action) => {
       let indexElem = state.notas.findIndex(n => n.id === action.payload.id);

@@ -1,7 +1,9 @@
 import React from "react";
 import "./styles/BarraBusqueda.css";
 
-const BarraBusqueda = () => {
+const BarraBusqueda = ({ actualizarInput }) => {
+
+  const change = (e) => actualizarInput(e.target.value);
 
   return (
     <div className="contenedor-barra-busqueda">
@@ -9,7 +11,7 @@ const BarraBusqueda = () => {
         className="barra-busqueda"
         type="text"
         placeholder="Agregar una etiqueta..."
-
+        onChange={change}
       />
     </div>
   );
