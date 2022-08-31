@@ -4,6 +4,7 @@ import {AiOutlineCloseCircle} from "react-icons/ai";
 import "./styles/Tag.css";
 import Boton from "../../commons/boton/Boton";
 import {useDispatch} from "react-redux";
+import {toggletag} from "../../../redux/slices/tags/tagSlice";
 
 const Tag = ({ nombre, color, id, seleccionado}) => {
 

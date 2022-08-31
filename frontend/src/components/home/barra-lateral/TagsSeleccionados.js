@@ -11,9 +11,6 @@ const TagsSeleccionados = () => {
 
   return (
       <div className="contenedor-tags">
-        <h2>
-          {input}
-        </h2>
         <ListaTags />
         <BarraBusqueda actualizarInput={setInput}/>
         <TagsSugerencias input={input}/>
